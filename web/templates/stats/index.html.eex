@@ -1,0 +1,22 @@
+<div class="Stats">
+  <h1>Stats</h1>
+  <div class="Stats-container">
+    <%= for stat <- @stats do %>
+      <div class="Stat">
+        <h2><%= stat.date %></h2>
+        <div>
+          <h3>😀</h3>
+          <span><%= stat.good %></span>
+        </div>
+        <div>
+          <h3>😐</h3>
+          <span><%= stat.neutral %></span>
+        </div>
+        <div>
+          <h3>😢</h3>
+          <span><%= stat.bad %></span>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

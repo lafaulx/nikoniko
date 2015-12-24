@@ -1,0 +1,15 @@
+<div class="Client">
+  <%= unless @is_mood_submitted_today do %>
+    <div class="Client-choice">
+      <h1>How was your day?</h1>
+      <div>
+        <button data-mood="good">😀</button>
+        <button data-mood="neutral">😐</button>
+        <button data-mood="bad">😢</button>
+      </div>
+    </div>
+    <h1 class="Client-submitted hidden">Submitted!</h1>
+  <% else %>
+    <h1 class="Client-submitted">You've already shared your mood today.</h1>
+  <% end %>
+</div>
